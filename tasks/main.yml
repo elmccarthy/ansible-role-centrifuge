@@ -1,0 +1,9 @@
+---
+
+- name: install Centrifuge via conda
+  conda_install:
+    name: "centrifuge"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "centrifuge_{{ env_name }}"
